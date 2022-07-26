@@ -26,7 +26,7 @@ describe('Central de Atendimento ao Cliente TAT', function () {
       .should('be.visible')
   })
 
-  it.only('Displays an error message when submitting the form with an email with invalid formatting', function () {
+  it('Displays an error message when submitting the form with an email with invalid formatting', function () {
     cy.get('#firstName')
       .type('Luiza')
     cy.get('#lastName')
